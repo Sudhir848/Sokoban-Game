@@ -4,7 +4,6 @@ Name: Sudhir Gunaseelan
 
 ## Description
 
-What the project does:
 This project is an implementation of the Sokoban game in C++. It is based on pushing boxes to the designated storage locations, where there is a constraint that boxes can only be pushed, not pulled. The player loses if they get stuck, i.e. the boxes cannot be moved anymore.
 Within this code, there is a class named Sokoban which contains information about what is happening during the game in addition to how the player can move around within it so as to win it too. This class is an extension of the sf::Drawable class found within the SFML library, which allows it to be drawn to a window. It has a number of data members as well, such as grid vector for storing the game board; board dimensions (width and height); textures and sprites corresponding to each of the game elements respectively (walls, boxes etc). It also has a player_position member that stores the player's current position on the board.
 The Sokoban constructor reads in a level file and initializes the game state based on the contents of the file. When the player wants to move in a certain direction, it will be supported by the movePlayer method. In order to draw the game on the screen/window, SFML uses an implementation that follows sf::Drawable interface known as draw method. For each cell inside a grid vector, draw() method iterates setting sprite’s position coupled with changing its texture following the cell’s value.
